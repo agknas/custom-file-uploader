@@ -23,14 +23,6 @@ export class FileUploaderComponent implements OnInit {
   upload(): void {
     this.uploader.queue.forEach((file: FileItem) => {
       file.upload();
-      file._xhr.onerror = () => {
-        console.log('upload error');
-      };
-      file._xhr.onloadend = () => {
-        console.log('upload loaded');
-      };
     });
-
   }
-
 }
