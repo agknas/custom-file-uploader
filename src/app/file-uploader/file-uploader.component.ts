@@ -9,6 +9,12 @@ import {CustomFileUploader} from './custom-file-uploader';
   templateUrl: './file-uploader.component.html',
   styleUrls: ['./file-uploader.component.scss']
 })
+/*
+  TASK:
+   add drop zone functionality to app (check ng2-file-upload demo)
+   create a service etc. that will store information about uploading process(information should contain
+   time when upload had finished and if result was successful or not and name of the file)
+ */
 export class FileUploaderComponent implements OnInit {
 
   uploader: CustomFileUploader;
